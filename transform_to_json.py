@@ -2,7 +2,7 @@ import json
 from testdata_cat import mv
 cats = []
 jsonformated = {}
-for i in range (10259):
+for i in range (9355):
     if not mv[i][0] in cats:
         cats.append(mv[i][0])
         jsonformated[str(mv[i][0])] =  {
