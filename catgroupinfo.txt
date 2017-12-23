@@ -1,0 +1,19 @@
+12001 - 12029 Eletrônicos
+12030 - 12068 Eletrodomésticos
+12069 - 12079 Vídeo e Foto
+12080 - 12109 Eletroportáteis
+12110 - 12137 Informática e Tablets
+12138 - 12255 Livros e CDs
+12256 - 12272 Artigos Infantis
+12273 - 12288 Beleza e Saúde
+12289 - 12311 Brinquedos e Games
+12312 - 12324 Escritório
+12325 - 12350 Esporte e Lazer
+12351 - 12371 Ferramentas e Máquinas
+12372 - 12392 Malas, Mochilas e Bazar
+12393 - 12491 Móveis e Decoração
+12492 - 12496 Relógios
+12497 - 12508 Celulares e Telefonia Fixa
+12509 - 12547 Utilidades Domésticas
+18001 - 18507 Automotivos
+19001 - 20002 Cama, Mesa e Banho
