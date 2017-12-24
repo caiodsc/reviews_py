@@ -2,6 +2,7 @@ from math import sqrt
 from base_de_dados_invertida import avaliacoes as baseFilmes
 import json
 from base_de_dados import avaliacoes as baseUsuario
+from similaridadeItens2 import itensSimilares
 
 jsonfile = open('similaridadeItens.py', 'w')
 
@@ -72,12 +73,27 @@ def calculaItensSimilares(base):
     return result
 #base = carregaMovieLens()
 
+def getRecomendacoesItens(baseUsuario, similaridadeItens, usuario):
+    notasUsuario = baseUsuario[usuario]
+    notas = {}
+    totalSimilaridade = {}
+    for (item, nota) in notasUsuario.items():
+        for (similaridade, item2) in similaridadeItens[item]:
+            if item2 in notasUsuario: continue
+            notas.setdefault(item2, 0)
+            notas[item2] += similaridade * nota
+            totalSimilaridade.setdefault(item2, 0)
+            totalSimilaridade[item2] += similaridade
+    rankings = [(score / totalSimilaridade[item], item) for item, score in notas.items()]
+    rankings.sort()
+    rankings.reverse()
+    return rankings
 
-   # notasUsuario =
-
+c = getRecomendacoesItens(baseUsuario, itensSimilares, '75712')
+print (c)
 
 #itensSimilares =
-json.dump(calculaItensSimilares(baseFilmes), jsonfile)
+#json.dump(calculaItensSimilares(baseFilmes), jsonfile)
 
 #f = open("similaridadeItens.py", "w")
 #f.write(str(itensSimilares))
