@@ -7,6 +7,6 @@ reader = csv.DictReader(csvfile)
 
 for row in reader:
     c = int(row['CATGROUP_ID'])
-    if 12497 <= c and c <= 12508: #Celulares
+    if True:#12030 <= c and c <= 12068: #Celulares
         json.dump((row['NAME'], row['USERS_ID'], row['REVIEWRATE']), jsonfile)
         jsonfile.write(',\n')

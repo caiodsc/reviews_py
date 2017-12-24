@@ -1,4 +1,4 @@
-from dict import avaliacoes
+from base_de_dados_invertida import avaliacoes
 from math import sqrt
 import numpy as np
 
@@ -40,4 +40,4 @@ def getRecomendacoes(usuario):
     rankings.reverse()
     return rankings
 
-print(getSimilares('Viva Voz Bluetooth para Autom�veis Multilaser AU201 Preto'))
+print(getSimilares("Porta CD e DVD para 40 Unidades Maxprint 603674 com Z�per Azul e Preto"))
