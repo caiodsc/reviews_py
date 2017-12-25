@@ -89,7 +89,7 @@ def getRecomendacoesItens(baseUsuario, similaridadeItens, usuario):
     rankings.reverse()
     return rankings
 
-c = getRecomendacoesItens(baseUsuario, itensSimilares, '75712')
+c = getRecomendacoesItens(baseUsuario, itensSimilares, '11471059')
 print (c)
 
 #itensSimilares =

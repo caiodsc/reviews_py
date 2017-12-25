@@ -1,4 +1,4 @@
-from base_de_dados import avaliacoes
+from base_de_dados2 import avaliacoes
 from math import sqrt
 
 def euclidiana (usuario1, usuario2):
@@ -11,8 +11,6 @@ def euclidiana (usuario1, usuario2):
         return 0
     r = sqrt(sum([pow(avaliacoes[usuario1][item] - avaliacoes[usuario2][item], 2) for item in avaliacoes[usuario1] if item in avaliacoes[usuario2]]))
     return (1/(1+r))
-    #c = sqrt(sum((avaliacoes[usuario1].get(d, 0) - avaliacoes[usuario2].get(d, 0)) ** 2 for d in set(avaliacoes[usuario1]) & set(avaliacoes[usuario2])))
-    #print (1/(1+c))
 
 def getSimilares(usuario):
     similaridade = [(euclidiana(usuario, outro), outro) for outro in avaliacoes if outro != usuario]
@@ -39,4 +37,4 @@ def getRecomendacoes(usuario):
     rankings.reverse()
     return rankings
 
-print(getRecomendacoes('41529'))
+print(getRecomendacoes('11979149'))

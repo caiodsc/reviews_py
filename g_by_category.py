@@ -1,7 +1,7 @@
 import csv, json
 
 csvfile = open('prod_review.csv', 'rU')
-jsonfile = open('testdata_cat.py', 'w')
+jsonfile = open('testdata_cat2.py', 'w')
 
 reader = csv.DictReader(csvfile)
 

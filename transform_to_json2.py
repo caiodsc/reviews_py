@@ -1,5 +1,5 @@
 import json
-from testdata_cat import mv
+from testdata_cat2 import mv
 cats = []
 jsonformated = {}
 for i in range (79959):
@@ -12,6 +12,6 @@ for i in range (79959):
         jsonformated[str(mv[i][1])][str(mv[i][0])] = int(mv[i][2])#1#0
 print(jsonformated)
 
-f = open("base_de_dados.py", "w")
+f = open("base_de_dados2.py", "w")
 f.write(str(jsonformated))
 f.close()
